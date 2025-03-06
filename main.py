@@ -38,7 +38,6 @@ class Employee:
     def __gt__(self, other):
         return self.__salary > other.__salary
     
-    # Destructor
     def __del__(self):
         print(f"Employee {self.name} resources freed.")
 
@@ -108,7 +107,7 @@ while True:
             print("--------Choose another operation.--------")
             print()
         else:
-            Employees[emp_id] = Employee(name, age, emp_id, salary)  # Fixed argument order
+            Employees[emp_id] = Employee(name, age, emp_id, salary)  
             print(f"Employee created with name: {name}, age: {age}, ID: {emp_id}, and salary: ${salary}.")
             print()
             print("--------Choose another operation.--------")
